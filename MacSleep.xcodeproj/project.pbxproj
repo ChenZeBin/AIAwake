@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16C582EC87BB0DCF2CDC5611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649D7084B0D3250F11E236BD /* Assets.xcassets */; };
+		2D61E7A133566FB9D605F3AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE08DB79E3A4B2FC68F49BBA /* ContentView.swift */; };
+		2D6957968FA56FBA3759D082 /* LidProtectionXPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AD3CFE73B747C0003FE5A /* LidProtectionXPC.swift */; };
+		2FF1DCD286C464F92D2E6531 /* LidProtectionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45122572BE031BB486DBD085 /* LidProtectionClient.swift */; };
+		31B7415E8D1727BE98B6EE5B /* com.carbin.AIAwake.LidHelper.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 70968A22085AE95CD092F469 /* com.carbin.AIAwake.LidHelper.plist */; };
+		42B2C0AE80BB45819925C898 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6003AD530C0EC41078F1CA8F /* main.swift */; };
+		61FA51D135E93A1F05A74FD2 /* LidProtectionXPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AD3CFE73B747C0003FE5A /* LidProtectionXPC.swift */; };
+		6D9351EA64E137C85FA989C0 /* PowerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32928969A4BA48979C2635 /* PowerManager.swift */; };
+		778B337808F558129D496436 /* PowerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA50AAC6A1868341AF7E80D /* PowerSnapshotTests.swift */; };
+		853AA7711D84D59A075860CE /* AIAwakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DD4F5692F44BEBE022788 /* AIAwakeApp.swift */; };
+		BD56DCDBA3481618B461A330 /* PowerSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE609F82DEDD3C64EA65314 /* PowerSnapshot.swift */; };
+		D71D74CC3EB19BFFD60BFCC9 /* AIAwakeLidHelper in Embed Dependencies */ = {isa = PBXBuildFile; fileRef = 4C800F27FD8B031F4F8F74AA /* AIAwakeLidHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43001045270237EF245B4D0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD748DE111897CA4052D99F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C564FDB31F753650D686384;
+			remoteInfo = AIAwakeLidHelper;
+		};
+		E5BFD64AE214B8432728E5DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD748DE111897CA4052D99F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FBABD5A3386BECBE8239167;
+			remoteInfo = AIAwake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B6A985403B37E66176803E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolderSpec = 1;
+			files = (
+				31B7415E8D1727BE98B6EE5B /* com.carbin.AIAwake.LidHelper.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894E5E13AB5D2467D32F3157 /* Embed Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				D71D74CC3EB19BFFD60BFCC9 /* AIAwakeLidHelper in Embed Dependencies */,
+			);
+			name = "Embed Dependencies";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		273B3810CF533E327BAD6314 /* AIAwakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIAwakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45122572BE031BB486DBD085 /* LidProtectionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidProtectionClient.swift; sourceTree = "<group>"; };
+		4C800F27FD8B031F4F8F74AA /* AIAwakeLidHelper */ = {isa = PBXFileReference; includeInIndex = 0; path = AIAwakeLidHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5AD3CFE73B747C0003FE5A /* LidProtectionXPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidProtectionXPC.swift; sourceTree = "<group>"; };
+		6003AD530C0EC41078F1CA8F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		649D7084B0D3250F11E236BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		666DD4F5692F44BEBE022788 /* AIAwakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAwakeApp.swift; sourceTree = "<group>"; };
+		70968A22085AE95CD092F469 /* com.carbin.AIAwake.LidHelper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = com.carbin.AIAwake.LidHelper.plist; sourceTree = "<group>"; };
+		A4C62B64398378EA32F6E766 /* AIAwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIAwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE08DB79E3A4B2FC68F49BBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC32928969A4BA48979C2635 /* PowerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerManager.swift; sourceTree = "<group>"; };
+		EFE609F82DEDD3C64EA65314 /* PowerSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSnapshot.swift; sourceTree = "<group>"; };
+		FAA50AAC6A1868341AF7E80D /* PowerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSnapshotTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5492ABC56A99FCAD115D21BE /* AIAwake */ = {
+			isa = PBXGroup;
+			children = (
+				666DD4F5692F44BEBE022788 /* AIAwakeApp.swift */,
+				649D7084B0D3250F11E236BD /* Assets.xcassets */,
+				AE08DB79E3A4B2FC68F49BBA /* ContentView.swift */,
+				45122572BE031BB486DBD085 /* LidProtectionClient.swift */,
+				DC32928969A4BA48979C2635 /* PowerManager.swift */,
+				EFE609F82DEDD3C64EA65314 /* PowerSnapshot.swift */,
+			);
+			name = AIAwake;
+			path = Sources/AIAwake;
+			sourceTree = "<group>";
+		};
+		561B7E2B441187855177B529 /* AIAwakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA50AAC6A1868341AF7E80D /* PowerSnapshotTests.swift */,
+			);
+			name = AIAwakeTests;
+			path = Tests/AIAwakeTests;
+			sourceTree = "<group>";
+		};
+		63F4A52594399136679F2521 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5D5AD3CFE73B747C0003FE5A /* LidProtectionXPC.swift */,
+			);
+			name = Shared;
+			path = Sources/Shared;
+			sourceTree = "<group>";
+		};
+		8610535201EE6BCE43C6D6F3 = {
+			isa = PBXGroup;
+			children = (
+				5492ABC56A99FCAD115D21BE /* AIAwake */,
+				561B7E2B441187855177B529 /* AIAwakeTests */,
+				9329E3C8619637E11D5E3F49 /* LidHelper */,
+				90E91F5A4ACE97FCBB5C6183 /* Resources */,
+				63F4A52594399136679F2521 /* Shared */,
+				89B48602FDF62C8FAF939018 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89B48602FDF62C8FAF939018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4C62B64398378EA32F6E766 /* AIAwake.app */,
+				4C800F27FD8B031F4F8F74AA /* AIAwakeLidHelper */,
+				273B3810CF533E327BAD6314 /* AIAwakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90E91F5A4ACE97FCBB5C6183 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70968A22085AE95CD092F469 /* com.carbin.AIAwake.LidHelper.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9329E3C8619637E11D5E3F49 /* LidHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6003AD530C0EC41078F1CA8F /* main.swift */,
+			);
+			name = LidHelper;
+			path = Sources/LidHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FBABD5A3386BECBE8239167 /* AIAwake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8477F973E89F7CE0A29940EF /* Build configuration list for PBXNativeTarget "AIAwake" */;
+			buildPhases = (
+				0D74E318532AF6131E557133 /* Sources */,
+				B75BB91EDE9D2C5DDE592800 /* Resources */,
+				2B6A985403B37E66176803E2 /* CopyFiles */,
+				894E5E13AB5D2467D32F3157 /* Embed Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4795607629BD9EEFF5A6CF19 /* PBXTargetDependency */,
+			);
+			name = AIAwake;
+			packageProductDependencies = (
+			);
+			productName = AIAwake;
+			productReference = A4C62B64398378EA32F6E766 /* AIAwake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C564FDB31F753650D686384 /* AIAwakeLidHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33BAB03E130A8DB86042CEF /* Build configuration list for PBXNativeTarget "AIAwakeLidHelper" */;
+			buildPhases = (
+				B82F919E7DC31EC35461DDD5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIAwakeLidHelper;
+			packageProductDependencies = (
+			);
+			productName = AIAwakeLidHelper;
+			productReference = 4C800F27FD8B031F4F8F74AA /* AIAwakeLidHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		A34164FDB934AB29E75BF29D /* AIAwakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12477B0F128000B57E064252 /* Build configuration list for PBXNativeTarget "AIAwakeTests" */;
+			buildPhases = (
+				3327F1010409C24F39A1B6CA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A117BC492909377DCBB0D258 /* PBXTargetDependency */,
+			);
+			name = AIAwakeTests;
+			packageProductDependencies = (
+			);
+			productName = AIAwakeTests;
+			productReference = 273B3810CF533E327BAD6314 /* AIAwakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCD748DE111897CA4052D99F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5FBABD5A3386BECBE8239167 = {
+						DevelopmentTeam = KS2MXK543H;
+						ProvisioningStyle = Automatic;
+					};
+					8C564FDB31F753650D686384 = {
+						DevelopmentTeam = KS2MXK543H;
+						ProvisioningStyle = Automatic;
+					};
+					A34164FDB934AB29E75BF29D = {
+						DevelopmentTeam = KS2MXK543H;
+					};
+				};
+			};
+			buildConfigurationList = 4E1AD3F01EBD5C9BCE9312BF /* Build configuration list for PBXProject "MacSleep" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8610535201EE6BCE43C6D6F3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 89B48602FDF62C8FAF939018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FBABD5A3386BECBE8239167 /* AIAwake */,
+				8C564FDB31F753650D686384 /* AIAwakeLidHelper */,
+				A34164FDB934AB29E75BF29D /* AIAwakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B75BB91EDE9D2C5DDE592800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C582EC87BB0DCF2CDC5611 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D74E318532AF6131E557133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853AA7711D84D59A075860CE /* AIAwakeApp.swift in Sources */,
+				2D61E7A133566FB9D605F3AA /* ContentView.swift in Sources */,
+				2FF1DCD286C464F92D2E6531 /* LidProtectionClient.swift in Sources */,
+				61FA51D135E93A1F05A74FD2 /* LidProtectionXPC.swift in Sources */,
+				6D9351EA64E137C85FA989C0 /* PowerManager.swift in Sources */,
+				BD56DCDBA3481618B461A330 /* PowerSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3327F1010409C24F39A1B6CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778B337808F558129D496436 /* PowerSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B82F919E7DC31EC35461DDD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6957968FA56FBA3759D082 /* LidProtectionXPC.swift in Sources */,
+				42B2C0AE80BB45819925C898 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4795607629BD9EEFF5A6CF19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C564FDB31F753650D686384 /* AIAwakeLidHelper */;
+			targetProxy = 43001045270237EF245B4D0A /* PBXContainerItemProxy */;
+		};
+		A117BC492909377DCBB0D258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FBABD5A3386BECBE8239167 /* AIAwake */;
+			targetProxy = E5BFD64AE214B8432728E5DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		078D0701AF0C2F769331C9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbin.AIAwakeTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIAwake.app/Contents/MacOS/AIAwake";
+			};
+			name = Release;
+		};
+		107C6A2981BFF1FDAD60C727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Resources/AIAwakeLidHelper-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbin.AIAwake.LidHelper;
+				PRODUCT_NAME = AIAwakeLidHelper;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		28DD7BCBA4B59D30BD2D6E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Resources/AIAwakeLidHelper-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbin.AIAwake.LidHelper;
+				PRODUCT_NAME = AIAwakeLidHelper;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6BD3A9FF4014099A62CF08DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KS2MXK543H;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		965F1BCD1D20614FCA5ACEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KS2MXK543H;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3AE180D9833AA8D11D7295C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Awake";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbin.AIAwake;
+				PRODUCT_NAME = AIAwake;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DE64C482CE8AD3387DC18D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbin.AIAwakeTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIAwake.app/Contents/MacOS/AIAwake";
+			};
+			name = Debug;
+		};
+		EF86BA6532911AA47E0808D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Awake";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carbin.AIAwake;
+				PRODUCT_NAME = AIAwake;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12477B0F128000B57E064252 /* Build configuration list for PBXNativeTarget "AIAwakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE64C482CE8AD3387DC18D12 /* Debug */,
+				078D0701AF0C2F769331C9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E1AD3F01EBD5C9BCE9312BF /* Build configuration list for PBXProject "MacSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD3A9FF4014099A62CF08DD /* Debug */,
+				965F1BCD1D20614FCA5ACEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8477F973E89F7CE0A29940EF /* Build configuration list for PBXNativeTarget "AIAwake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF86BA6532911AA47E0808D2 /* Debug */,
+				D3AE180D9833AA8D11D7295C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B33BAB03E130A8DB86042CEF /* Build configuration list for PBXNativeTarget "AIAwakeLidHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DD7BCBA4B59D30BD2D6E68 /* Debug */,
+				107C6A2981BFF1FDAD60C727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCD748DE111897CA4052D99F /* Project object */;
+}

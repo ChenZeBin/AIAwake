@@ -1,0 +1,83 @@
+name: MacSleep
+
+options:
+  minimumXcodeGenVersion: 2.46.0
+  deploymentTarget:
+    macOS: "13.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    DEVELOPMENT_TEAM: KS2MXK543H
+
+targets:
+  AIAwake:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/AIAwake
+      - path: Sources/Shared
+      - path: Resources/com.carbin.AIAwake.LidHelper.plist
+        buildPhase:
+          copyFiles:
+            destination: wrapper
+            subpath: Contents/Library/LaunchDaemons
+    dependencies:
+      - target: AIAwakeLidHelper
+        embed: true
+        link: false
+        codeSign: true
+        copy:
+          destination: executables
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.carbin.AIAwake
+        PRODUCT_NAME: AIAwake
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: AI Awake
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_LSUIElement: YES
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_APP_SANDBOX: NO
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+
+  AIAwakeLidHelper:
+    type: tool
+    platform: macOS
+    sources:
+      - path: Sources/LidHelper
+      - path: Sources/Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.carbin.AIAwake.LidHelper
+        PRODUCT_NAME: AIAwakeLidHelper
+        CREATE_INFOPLIST_SECTION_IN_BINARY: YES
+        INFOPLIST_FILE: Resources/AIAwakeLidHelper-Info.plist
+        ENABLE_APP_SANDBOX: NO
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+
+  AIAwakeTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests/AIAwakeTests
+    dependencies:
+      - target: AIAwake
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.carbin.AIAwakeTests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  AIAwake:
+    build:
+      targets:
+        AIAwake: all
+        AIAwakeTests: [test]
+    test:
+      targets:
+        - AIAwakeTests
